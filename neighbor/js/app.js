@@ -138,7 +138,7 @@ var ViewModel = function() {
         map.addOverlay(place.marker());
 
         // 使用百度Place API 获取地点详情
-        var ajaxUrl = "http://api.map.baidu.com/place/v2/detail?uid=" + place.id() + "&output=json&scope=2&ak=cVicnzEfEuAtITIaDVahjg8i0toBYerK";
+        var ajaxUrl = "https://api.map.baidu.com/place/v2/detail?uid=" + place.id() + "&output=json&scope=2&ak=cVicnzEfEuAtITIaDVahjg8i0toBYerK";
         $.ajax({
             url: ajaxUrl,
             type: "GET",
@@ -178,7 +178,7 @@ var ViewModel = function() {
                 }
                 // 设定小窗口内容
                 var content = '<h4>' + place.title() + '<h4>' +
-                    '<img alt="街景图" src="http://api.map.baidu.com/panorama/v2?ak=cVicnzEfEuAtITIaDVahjg8i0toBYerK&width=110&height=55&poiid=' + place.picId() + '">' +
+                    '<img alt="街景图" src="https://api.map.baidu.com/panorama/v2?ak=cVicnzEfEuAtITIaDVahjg8i0toBYerK&width=110&height=55&poiid=' + place.picId() + '">' +
                     '<p>' + place.address() + '</p>' +
                     '<p>' + place.tag() + '</p>' +
                     '<p>' + place.rating() + '</p>' +
