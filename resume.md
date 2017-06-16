@@ -35,7 +35,7 @@
  - [我家附近街区地图](https://github.com/mirmarkt/neighborhood-map) :
 使用bootstrap，knockout.js框架和百度地图API编写的显示筛选家附近的地点和详细信息的网页应用。点击[这里](https://mirmarkt.github.io/neighbor/index.html)可以预览。
 
- - [网页性能优化](https://github.com/mirmarkt/Website-Optimization_zh): 把几个只有10几fps的网页优化为60fps的网页，pagespeed分贼高。点[这里](https://mirmarkt.github.io/Website%20Optimization_zh/index.html)预览。
+ - [网页性能优化](https://github.com/mirmarkt/Website-Optimization_zh): 把几个只有10几fps的网页优化为60fps的网页。点[这里](https://mirmarkt.github.io/Website%20Optimization_zh/index.html)预览。
 
 ## 技能
 
