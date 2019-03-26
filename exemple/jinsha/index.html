@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>金沙娱乐场</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link rel="stylesheet" type="text/css" href="css/style.css"/>
+		<link rel="stylesheet" type="text/css" href="css/fullpage.css"/>
+		<link rel="stylesheet" type="text/css" href="css/animate.css"/>
+		
+	</head>
+	<body>
+		<div class="header"><div class="w1000">
+		    <img src="img/logo.png"/>
+		</div></div>
+		<div class="footer">Copyright © 金沙娱乐场R Sands Reserved</div>
+		<img src="img/qrcode.png" class="qrcode"/>
+		<div id="fullpage">
+			<div class="section" id="section1">
+				<div class="w1000">
+					<img src="img/index.png" class=""/>
+					<div class="btns">
+						<a href=""><img src="img/图1.png" alt=""/></a>
+						<a href=""><img src="img/图2.png" alt="" /></a>
+					</div>
+				</div>
+				
+			</div>
+			<div class="section" id="section2">
+				
+				<div class="w1000">
+					<img src="img/game.png"/>
+					<div class="games nonedis">
+						<a href=""><img src="img/game-1.png" alt="" /></a>
+						<a href=""><img src="img/game-2.png" alt="" /></a>
+						<a href=""><img src="img/game-3.png" alt="" /></a>
+						<a href=""><img src="img/game-4.png" alt="" /></a>
+					</div>
+				</div>
+				<div class="bg">
+					<img src="img/game-bg.png"/>
+				</div>
+			</div>
+			<div class="section" id="section3">
+				<div class="w1000">
+					<img src="img/poker.png"/>
+					<div class="pokers nonedis">
+						<a href=""><img src="img/poker-1.png" alt="" /></a>
+						<a href=""><img src="img/poker-2.png" alt="" /></a>
+						<a href=""><img src="img/poker-3.png" alt="" /></a>
+						<a href=""><img src="img/poker-4.png" alt="" /></a>
+					</div>
+				</div>
+				<div class="bg">
+					<img src="img/poker-bg.png"/>
+				</div>
+			</div>
+			<div class="section" id="section4">
+				<div class="w1000">
+					<img src="img/down.png"/>
+					<div class="btns nonedis">
+						<a href="https://www.js52011.com/entrance/page/registermember"><img src="img/reg.png" alt="" /></a>
+						<a href="https://messenger.providesupport.com/messenger/0ayzew688uj9p1ckiifhi7fq6s.html"><img src="img/service.png" alt="" /></a>
+					</div>
+					<div class="downs nonedis">
+						<a href=""><img src="img/ios.png" alt="" /></a>
+						<a href=""><img src="img/android.png" alt="" /></a>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<script src="js/fullpage.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/fullpage.extensions.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+		<script type="text/javascript">
+			new fullpage('#fullpage', {
+				//options here
+				scrollingSpeed:400,
+				autoScrolling:true,
+				//scrollHorizontally: true,
+				anchors: ['index', 'game', 'poker','download'],
+        		navigation: true,
+        		navigationPosition: 'right',
+        		navigationTooltips: ['首页', '游戏', '棋牌','下载APP'],
+        		afterLoad: function(origin, destination, direction) {
+	    			if(destination.index == 0){
+	    				$('#section1 .btns').removeClass('nonedis');
+		                $('#section1 .btns').addClass('animated bounceInUp');
+		            }else if(destination.index == 1){
+		            	$('.games').removeClass('nonedis');
+		                $('.games').addClass('animated fadeInUp');
+		            }else if(destination.index == 2){
+		            	$('.pokers').removeClass('nonedis');
+		                $('.pokers').addClass('animated fadeInUp');
+		            }else if(destination.index == 3){
+		            	$('.downs').removeClass('nonedis');
+		                $('.downs').addClass('animated fadeInUp');
+		                $('#section4 .btns').removeClass('nonedis');
+		                $('#section4 .btns').addClass('animated bounceInRight');
+		            }
+
+        		},
+        		onLeave: function(origin, destination, direction) {
+        			if(origin.index == 0){
+        				$('#section1 .btns').removeClass('animated bounceInUp');
+        				$('#section1 .btns').addClass('nonedis');
+        			}else if(origin.index == 1){
+        				$('.games').removeClass('animated fadeInUp');
+        				$('.games').addClass('nonedis');
+        			}else if(origin.index == 2){
+        				$('.pokers').removeClass('animated fadeInUp');
+        				$('.pokers').addClass('nonedis');
+        			}else if(origin.index == 3){
+        				$('.downs').removeClass('animated fadeInUp');
+        				$('.downs').addClass('nonedis');
+        				$('#section4 .btns').removeClass('animated bounceInRight');
+        				$('#section4 .btns').addClass('nonedis');
+        			}
+        		}
+
+			});
+			
+		</script>
+	</body>
+</html>

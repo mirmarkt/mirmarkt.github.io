@@ -1,0 +1,46 @@
+html {
+	height: 100vh;
+	background:url(../img/bg.jpg)  no-repeat center center;
+	background-size:cover;
+	background-attachment:fixed;
+}
+body {
+	
+    text-align: center;
+	margin: 0;
+
+}
+.btns {
+	padding-top: 65vh;
+	background: url(../img/title.png) no-repeat center top;
+	background-size: 25% auto;
+}
+div.copyright {
+	position: absolute;
+	bottom: 0;
+	text-align: center;
+	width: 100%;
+}
+p.copyright {
+	color: white;
+}
+.btns > a > img{
+	transition: all .6s ;
+	margin: 0 10px;
+}
+.btns > a:hover > img{
+	transform: scale(1.05);
+	opacity: .9;
+}
+.beiyong img {
+	height: 50px;
+	width: 50px;
+}
+.beiyong iframe {
+	border: 0;
+}
+@media only screen and (max-width: 1000px) {
+	.btns {
+		background-size: 80% auto;
+	}
+}

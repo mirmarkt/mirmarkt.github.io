@@ -1,0 +1,188 @@
+.section {
+	background-size: cover;
+	background-position: center top;
+	background-image: url(../img/bg.jpg);
+	position: relative;
+}
+/*#section1, #section3 {
+	background-image: url(../img/bg.jpg);
+}
+#section2, #section4 {
+	background-image: url(../img/bg2.jpg);
+}*/
+img {
+	display: inline-block;
+	height: auto;
+	max-width: 100%;
+}
+.w1000 {
+	width: 1000px;
+	margin: 0 auto;
+}
+.header {
+	position:fixed;
+	height: 80px;
+	display:block;
+	width: 100%;
+	background: transparent;
+	z-index:9;
+	color: #f2f2f2;
+	padding-top: 15px;
+	top: 0;
+}
+.footer {
+	position:fixed;
+	height: 60px;
+	display:block;
+	width: 100%;
+	background: rgba(255,255,255,.16);
+	z-index:9;
+	text-align:center;
+	color: #f2f2f2;
+	padding: 40px 0 0 0;
+	bottom: 0;
+	font-size: 14px;
+}
+img.qrcode {
+	position: fixed;
+	height: 300px;
+	width: auto;
+	z-index: 9;
+	right: 100px;
+	top: calc(50vh - 150px);
+}
+#fp-nav ul li a span, .fp-slidesNav ul li a span {
+	background: #fff !important;
+}
+#section1 .btns {
+	margin-top: 40px;
+	margin-bottom: 15vh;
+}
+#section1 .btns img {
+	/*margin: 0 10px;*/
+	width: 49%;
+	transition: all 600ms ease;
+}
+#section2 .games {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 20px;
+	position: relative;
+	z-index: 2;
+}
+#section2 .games a {
+	margin: 0 10px;
+}
+#section2 .bg {
+	position: absolute;
+	top: 0;
+}
+#section3 .pokers {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 20px;
+	position: relative;
+	z-index: 2;
+}
+#section3 .pokers a {
+	margin: 0 10px;
+}
+#section3 .bg {
+	position: absolute;
+	top: 0;
+}
+#section4 .btns {
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+#section4 .btns img {
+	margin: 0 10px;
+	transition: all 600ms ease;
+}
+#section4 .downs img {
+	margin: 0 1.5vw;
+	height: 30vh;
+}
+.nonedis {
+	visibility:hidden;
+}
+
+/*animation*/
+
+#section1 .w1000 > img{
+	left: -130%;
+	position:relative;
+	transition: all 600ms ease;
+}
+
+body.fp-viewing-index #section1 .w1000 > img{
+	left: 0%;
+}
+
+#section2 .w1000 > img{
+	left: -130%;
+	position:relative;
+	transition: all 600ms ease;
+}
+
+body.fp-viewing-game #section2 .w1000 > img{
+	left: 0%;
+}
+
+#section3 .w1000 > img{
+	left: -130%;
+	position:relative;
+	transition: all 600ms ease;
+}
+
+body.fp-viewing-poker #section3 .w1000 > img{
+	left: 0%;
+}
+#section4 .w1000 > img{
+	left: -130%;
+	position:relative;
+	transition: all 600ms ease;
+	height: 24vh;
+}
+
+body.fp-viewing-download #section4 .w1000 > img{
+	left: 0%;
+}
+
+/*hover animation*/
+
+#section1 .btns img:hover, #section4 .btns img:hover {
+	transform: scale(1.05);
+}
+#section2 .games a img, #section3 .pokers a img {
+	transition: all 600ms ease;
+}
+#section2 .games a img:hover, #section3 .pokers a img:hover {
+	transform: scale(1.05);
+}
+
+/*responsive*/
+@media only screen and (max-width: 1000px) {
+	.w1000 {
+		width: 100%;
+	}
+	img.qrcode {
+		display: none;
+	}
+	.downs {
+		display: flex;
+		justify-content: space-between;
+	}
+	.downs a {
+		margin: 0 30px;
+	}
+	#section2 .games a, #section3 .pokers a {
+		margin: 0px;
+	}
+	#section4 .downs img {
+		margin: 0;
+	}
+	.btns img {
+		width: 40%;
+	}
+}

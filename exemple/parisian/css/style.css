@@ -1,0 +1,267 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+a {
+	color: #fff;
+	text-decoration: none
+}
+body {
+	font: 14px/1.6 "Microsoft Yahei";
+	color: #FFF;
+	background: #fff url(../images/bg01.jpg) no-repeat center top;
+}
+.w1000 {
+	width: 1000px;
+	margin: 0 auto
+}
+ul li {
+	list-style: none
+}
+.clearfix:after {
+	content: ".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden
+}
+.clearfix {
+*+height:1%;
+}
+* html .clearfix {
+	zoom: 1;
+} /* IE6 */
+*+html .clearfix {
+	zoom: 1;
+} /* IE7 */
+.fL {
+	float: left !important;
+}
+.fR {
+	float: right !important;
+}
+/*---------------index--------------*/
+#header	{
+	padding: 0px 0 10px;
+	height: 125px;
+	box-sizing: border-box;
+	background: white no-repeat center top;
+	border-bottom: 1px solid #d2b47a;
+	position: relative;
+	z-index: 2;
+}
+#header .hBox {
+	width: 1000px;
+	margin: 0 auto;
+}
+#header .logo {
+	margin: 0 110px 0 0;
+	float: left;
+}
+#header .logo img {
+	display: block;
+}
+#header .hIm01 {
+	float: left;
+	margin-top: 30px;
+}
+#header .hIm02 {
+	float: right;
+	margin-top: 30px;
+}
+.wrap {
+	width: 1000px;
+	margin: 0 auto;
+	background: url(../images/bg02.png) no-repeat center top;
+	height:521px;
+	display: flex;
+	
+	clear: both;
+	position: relative;
+	
+}
+#main {
+	padding: 10px 0;
+}
+#main h2 {
+	text-align: center;
+	margin-bottom: 16px;
+}
+#main #conts {
+	padding: 110px 20px 30px 55px;
+	width: 485px;
+}
+#conts .linkUl {
+	margin-bottom: 40px;
+}
+#conts .linkUl li {
+	margin-bottom: 5px;
+	overflow: hidden;
+	zoom: 1;
+}
+#conts .linkUl li .web {
+	margin-right: 8px;
+	line-height:45px;
+	float: left;
+	width: 290px;
+	color: #313131;
+	font-size: 18px;
+	text-align: center;
+	background-color: #fff;
+	border: 1px solid #b5b5b5;
+}
+
+#conts .linkUl li a {
+	width: 122px;
+	line-height: 45px;
+	background: #a0a0a0;
+	display: inline-block;
+	font-size: 18px;
+	text-align: center;
+	margin-left: 8px;
+}
+#conts .linkUl li a:hover {
+	background: #f10061;
+}
+#conts .text {
+	color:#313131;
+	line-height: 2.0;
+	font-size: 15px;
+}
+#conts .text .color1 {
+	color: #fff600;
+}
+#conts .text .color2 {
+	color: #00ffa2;
+}
+#conts .text .color3 {
+	color: #0000ff;
+}
+#conts .text span {
+	color: #f10061;
+}
+#main #sideBar {
+	width: 340px;
+
+	padding: 110px 50px 17px;
+	position: relative;
+}
+#sideBar .title {
+	margin-bottom: 15px;
+}
+#sideBar .ma {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 15px;
+}
+#sideBar .ma li {
+	margin: 0 3px;
+	width: 150px;
+	display: inline-block;
+	text-align: center;
+}
+#sideBar .ma li span {
+	margin-top: 12px;
+	display: block;
+}
+#sideBar .ttl {
+	margin-bottom: 15px;
+	text-align: center;
+}
+.inner {
+	width: 1000px;
+	margin: 28px auto 0;
+	text-align: center;
+}
+.inner p {
+	margin-bottom: 15px;
+}
+.inner .link {
+	text-align: center;
+	background: url(../images/index/line.png) no-repeat 475px 15px;
+}
+.inner .link img {
+	display: inline-block;
+	margin-right: 15px;
+}
+.inner .link a {
+	margin: 0 12px;
+	display: inline-block;
+}
+
+
+#footer {
+	padding: 20px 0;
+	text-align: center;
+	clear: both;
+	background-color: #292548;
+	margin-top: -10px;
+
+}
+#footer .fBox {
+	width: 1000px;
+	margin: 0 auto;
+}
+#footer .copyright {
+	color: #7972a9;
+	font-size: 14px;
+}
+.popBox {
+	display: none;
+	width: 662px;
+	height: 241px;
+	background-color: #e4d6ae;
+	border: 1px solid #ECC250;
+	box-sizing: border-box;
+	font-size: 20px;
+	color: #ffffff;
+	text-align: center;
+}
+.popBox p {
+	margin-top: 100px;
+}
+.layui-layer-ico {
+	background: url(../images/index/close.png) no-repeat center top !important;
+	width: 43px !important;
+	height: 43px !important;
+}
+.layui-layer-setwin .layui-layer-close2 {
+	top: -15px !important;
+	right:-15px !important;
+}
+.stitle {
+	margin: 18px 0;
+}
+table {
+	background: #ededed;
+	width: 1000px;
+	border-spacing:0px;
+	border-collapse: collapse;
+	table-layout:fixed
+}
+td {
+	text-align: center;
+	border: 1px solid #dddddd;
+	padding: 10px 0;
+}
+td:hover {
+	background: #f10061;
+}
+td:hover > a > p {
+	color: white;
+}
+td > a > p {
+	color: #1b1b1b;
+}
+.certificate {
+	margin-top: 18px;
+	height: 262px;
+	padding: 29px 0;
+	background: #efedfa;
+}
+.color4 {
+	color: #d9d4ff;
+}
+.hover {
+	display: none;
+}

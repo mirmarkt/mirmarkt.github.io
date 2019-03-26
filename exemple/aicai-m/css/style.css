@@ -1,0 +1,106 @@
+#__bs_notify__ {
+  display: none !important;
+}
+[class*=tell] {
+  display: table-cell;
+  vertical-align: middle;
+}
+[class*=dt] {
+  display: table;
+  width: 100%;
+}
+[class*=fw] {
+  float: left;
+  width: 100%;
+}
+[class*=item] ul {
+  display: table;
+  width: 100%;
+}
+[class*=item] ul li {
+  width: 100%;
+}
+[class*=item] ul li:last-child {
+  border-bottom: none;
+}
+[class*=icon] {
+  font-family: "iconfont" !important;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.toutu img {
+  width: 100%;
+}
+.mobile-wrap {
+  position: relative;
+  min-height: 100vh;
+  height: 48rem;
+  background: url("../img/jc.jpg") center top no-repeat;
+  -webkit-background-size: cover;
+          background-size: cover;
+  overflow: hidden;
+}
+.top {
+  padding: 0.2rem 4% 0;
+}
+.top ul li {
+  width: 25%;
+  text-align: center;
+}
+.top ul li a {
+  display: block;
+}
+.top ul li a img {
+  height: 0.98rem;
+}
+.top ul li .pict {
+  height: 1rem;
+}
+.top ul li span {
+  display: block;
+  color: #fff;
+  font-size: 0.32rem;
+}
+.loadding {
+  z-index: 2;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  background: #fff;
+  height: 100%;
+}
+.loadding i {
+  margin-top: -0.29rem;
+  margin-left: -0.29rem;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  font-size: 0.5rem;
+  color: #000;
+}
+.link-one {
+  margin-top: 17rem;
+  text-align: center;
+}
+.link-one a {
+  display: block;
+}
+.link-one a img {
+  width: 5.13rem;
+}
+.abs {
+  color: #fff;
+  font-size: 0.61rem;
+  text-align: center;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  bottom: 1.4rem;
+}
+
+/*# sourceMappingURL=style.css.map */
